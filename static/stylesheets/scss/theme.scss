@@ -1,1 +1,13 @@
 @import "theme-variables";
+
+header{
+  background: mix( $brand-primary, white, 90% );
+}
+
+.navbar-default{
+  background: $brand-primary;
+}
+
+.navbar-brand a{
+  color: white;
+}
