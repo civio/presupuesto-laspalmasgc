@@ -11,3 +11,22 @@ header{
 .navbar-brand a{
   color: white;
 }
+
+.tax-receipt-content #tax-amount{
+  color: white;
+  background: $brand-primary;
+  padding: 20px 15px;
+  font-weight: 300;
+
+  b{
+    font-weight: 400;
+  }
+
+  p{
+    margin: 0; 
+  }
+}
+
+.tax-receipt-content .form-user-incomings{
+  padding-top: 30px;
+}

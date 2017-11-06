@@ -1,0 +1,79 @@
+<form class="form-user-incomings" action="#" method="get">
+
+  <div class="row">
+    <div class="form-group">
+      <label for="select-house">{{ _('Introduce el valor catastral de tu vivienda') }}</label>
+      <div class="input-group">
+        <input id="select-house" type="number" min="0" step="any" class="form-control">
+        <div class="input-group-addon">€</div>
+      </div>
+    </div>
+    <div class="select-info">{{ _('IBI') }}: <span id="select-house-tax"></span></div>
+    <div class="form-group" style="clear: both">
+      <label for="select-house-type">{{ _('Tipo de vivienda') }}</label>
+      <select id="select-house-type" class="form-control">
+        <option value="0" type="text" selected="selected">{{ _('Urbana') }}</option>
+        <option value="1" type="text">{{ _('Rústica') }}</option>
+        <option value="2" type="text">{{ _('Características especiales') }}</option>
+      </select>
+    </div>
+  </div>
+    
+  <div class="row">
+    <div class="form-group">
+      <label for="select-vehicle">{{ _('Vehículo') }}</label>
+      <select id="select-vehicle" class="form-control">
+        <option value="0" type="text" selected="selected">{{ _('Ninguno') }}</option>
+        <option value="1" type="text">{{ _('Coche muy pequeño (menos de 8 caballos fiscales)') }}</option>
+        <option value="2" type="text">{{ _('Coche pequeño (entre 8 y 12 caballos fiscales)') }}</option>
+        <option value="3" type="text">{{ _('Coche mediano (entre 12 y 16 caballos fiscales)') }}</option>
+        <option value="4" type="text">{{ _('Coche grande (entre 16 y 20 caballos fiscales)') }}</option>
+        <option value="5" type="text">{{ _('Coche muy grande (más de 20 caballos fiscales)') }}</option>
+        <option value="6" type="text">{{ _('Ciclomotor muy pequeño (menos de 125 cc)') }}</option>
+        <option value="7" type="text">{{ _('Ciclomotor pequeño (entre 125 y 250 cc)') }}</option>
+        <option value="8" type="text">{{ _('Ciclomotor mediano (entre 250 y 500 cc)') }}</option>
+        <option value="9" type="text">{{ _('Ciclomotor grande (entre 500 y 1000 cc)') }}</option>
+        <option value="10" type="text">{{ _('Ciclomotor muy grande (más de 1000 cc)') }}</option>
+      </select>
+    </div>
+    <div class="select-info">{{ _('Impuesto a vehículos motorizados') }}: <span id="select-vehicle-tax"></span></div>
+  </div>
+    
+  <div class="row">
+    <div class="form-group">
+      <label for="select-extra-vehicle">{{ _('Vehículo adicional') }}</label>
+      <select id="select-extra-vehicle" class="form-control">
+        <option value="0" type="text" selected="selected">{{ _('Ninguno') }}</option>
+        <option value="1" type="text">{{ _('Coche muy pequeño (menos de 8 caballos fiscales)') }}</option>
+        <option value="2" type="text">{{ _('Coche pequeño (entre 8 y 12 caballos fiscales)') }}</option>
+        <option value="3" type="text">{{ _('Coche mediano (entre 12 y 16 caballos fiscales)') }}</option>
+        <option value="4" type="text">{{ _('Coche grande (entre 16 y 20 caballos fiscales)') }}</option>
+        <option value="5" type="text">{{ _('Coche muy grande (más de 20 caballos fiscales)') }}</option>
+        <option value="6" type="text">{{ _('Ciclomotor muy pequeño (menos de 125 cc)') }}</option>
+        <option value="7" type="text">{{ _('Ciclomotor pequeño (entre 125 y 250 cc)') }}</option>
+        <option value="8" type="text">{{ _('Ciclomotor mediano (entre 250 y 500 cc)') }}</option>
+        <option value="9" type="text">{{ _('Ciclomotor grande (entre 500 y 1000 cc)') }}</option>
+        <option value="10" type="text">{{ _('Ciclomotor muy grande (más de 1000 cc)') }}</option>
+      </select>
+    </div>
+    <div class="select-info">{{ _('Impuesto a vehículos motorizados') }}: <span id="select-extra-vehicle-tax"></span></div>
+  </div>
+
+  <div class="row">
+    <div class="form-group">
+      <label for="select-parking">{{ _('¿Tienes un vado?') }}</label>
+      <select id="select-parking" class="form-control">
+        <option value="0" type="text" selected="selected">{{ _('No') }}</option>
+        <option value="1" type="text">{{ _('Sí, de categoría 1') }}</option>
+        <option value="2" type="text">{{ _('Sí, de categoría 2') }}</option>
+        <option value="3" type="text">{{ _('Sí, de categoría 3') }}</option>
+      </select>
+    </div>
+    <div class="select-info">{{ _('Tasa') }}: <span id="select-parking-tax"></span></div>
+  </div>
+
+</form>
+
+<div id="tax-amount">
+  <p>{{ _('Contribuyes con un total de <b id="tax-amount-paid"></b> a los presupuestos del Ayuntamiento de Las Palmas de Gran Canaria')|safe }}.</p>
+</div>  
