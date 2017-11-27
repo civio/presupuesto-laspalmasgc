@@ -6,13 +6,14 @@ import csv
 import os
 import re
 
+
 class LasPalmasGCBudgetLoader(SimpleBudgetLoader):
 
     def parse_item(self, filename, line):
         # Programme codes have changed in 2015, due to new laws. Since the application expects a code-programme
         # mapping to be constant over time, we are forced to amend budget data prior to 2015.
         # See https://github.com/dcabo/presupuestos-aragon/wiki/La-clasificaci%C3%B3n-funcional-en-las-Entidades-Locales
-        programme_mapping = {
+        programme_mapping_2015 = {
             # old programme: new programme
             '13400': '13500',   # Protección civil
             '13500': '13600',   # Servicio de prevención y extinción de incendios
@@ -36,12 +37,18 @@ class LasPalmasGCBudgetLoader(SimpleBudgetLoader):
             '92300': '92310',   # Gestión del padrón municipal de habitantes
         }
 
+        # Some codes change through 2016 too
+        programme_mapping_2016 = {
+            # old programme: new programme
+            '44000': '44110',   # Transporte colectivo urbano de viajeros
+        }
+
         # Institutional code (all income go to the root node, and all expenses come from the root node too)
         ic_code = '000'
 
         # Type of data
-        is_expense = (filename.find('gastos.csv')!=-1)
-        is_actual = (filename.find('/ejecucion_')!=-1)
+        is_expense = (filename.find('gastos.csv') != -1)
+        is_actual = (filename.find('/ejecucion_') != -1)
 
         # Expenses
         if is_expense:
@@ -49,11 +56,14 @@ class LasPalmasGCBudgetLoader(SimpleBudgetLoader):
             # We got 5- digit functional codes as input
             fc_code = line[1].strip()
 
-            # For 2015 we check whether we need to amend the programme code
+            # For 2015 and 2016 we check whether we need to amend the programme code
             year = re.search('municipio/(\d+)/', filename).group(1)
 
             if int(year) < 2015:
-                fc_code = programme_mapping.get(fc_code, fc_code)
+                fc_code = programme_mapping_2015.get(fc_code, fc_code)
+
+            if int(year) < 2016:
+                fc_code = programme_mapping_2016.get(fc_code, fc_code)
 
             # Economic code
             # We got 5- digit economic codes as input, and that's ok for us
