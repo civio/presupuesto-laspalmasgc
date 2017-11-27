@@ -9,10 +9,10 @@ MAIN_ENTITY_LEVEL = 'municipio'
 MAIN_ENTITY_NAME = 'Las Palmas de Gran Canaria'
 
 # Theme Budget Loader class name. Default: 'SimpleBudgetLoader'
-BUDGET_LOADER = 'LaspalmasBudgetLoader'
+BUDGET_LOADER = 'LasPalmasGCBudgetLoader'
 
 # Theme Payments Loader class name. Default: 'PaymentsLoader'
-PAYMENTS_LOADER = 'LaspalmasPaymentsLoader'
+PAYMENTS_LOADER = 'LasPalmasGCPaymentsLoader'
 
 
 # Show / hide Settings

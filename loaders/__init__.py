@@ -1,2 +1,2 @@
-from laspalmas_budget_loader import LaspalmasBudgetLoader
-from laspalmas_payments_loader import LaspalmasPaymentsLoader
+from laspalmasgc_budget_loader import LasPalmasGCBudgetLoader
+from laspalmasgc_payments_loader import LasPalmasGCPaymentsLoader
