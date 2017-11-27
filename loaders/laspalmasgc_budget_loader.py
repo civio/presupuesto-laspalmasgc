@@ -19,6 +19,7 @@ class LasPalmasGCBudgetLoader(SimpleBudgetLoader):
             '13500': '13600',   # Servicio de prevención y extinción de incendios
             '15100': '15102',   # Urbanismo: gestión de licencias y protección del paisaje
             '15103': '15101',   # Urbanismo: planeamiento, gestión y ejecución
+            '15112': '15103',   # Plan de cooperación
             '15200': '15210',   # Promoción y gestión de vivienda de protección pública
             '15500': '15320',   # Pavimentación de vías públicas
             '16200': '16210',   # Recogida de residuos
