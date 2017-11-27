@@ -524,7 +524,9 @@ G,9,4,1,Devolución de fianzas
 # Conceptos específicos de Las Palmas de Gran Canaria
 #
 I,2,8,0,"Impuestos indirectos extinguidos"
+I,3,7,0,"Monetarización del aprovechamiento urbanístico"
 I,4,5,5,"Transferencias de comunidades autónomas"
+I,4,7,0,"De empresas privadas"
 I,4,8,0,"De familias e instituciones sin fines de lucro"
 I,5,2,0,"Intereses de depósitos"
 I,6,1,0,"De las demás inversiones reales"
@@ -539,5 +541,6 @@ G,4,8,0,"Atenciones benéficas y asistenciales"
 G,4,8,1,"Premios, becas, pensiones para estudio e investigación"
 G,4,8,6,"Transferencias corrientes a familias e instituciones sin fines de lucro"
 G,4,8,9,"Otras transferencias a familias e instituciones sin fines de lucro"
+G,7,4,9,"Otras subvenciones a entes públicos y sociedades mercantiles de la entidad local"
 G,7,8,0,"Transferencias de capital a familias e instituciones sin fines de lucro"
 G,7,8,9,"Otras transferencias de capital"
