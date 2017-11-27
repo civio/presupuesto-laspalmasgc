@@ -14,6 +14,26 @@ class LasPalmasGCBudgetLoader(SimpleBudgetLoader):
         # See https://github.com/dcabo/presupuestos-aragon/wiki/La-clasificaci%C3%B3n-funcional-en-las-Entidades-Locales
         programme_mapping = {
             # old programme: new programme
+            '13400': '13500',   # Protección civil
+            '13500': '13600',   # Servicio de prevención y extinción de incendios
+            '15100': '15102',   # Urbanismo: gestión de licencias y protección del paisaje
+            '15103': '15101',   # Urbanismo: planeamiento, gestión y ejecución
+            '15200': '15210',   # Promoción y gestión de vivienda de protección pública
+            '15500': '15320',   # Pavimentación de vías públicas
+            '16200': '16210',   # Recogida de residuos
+            '23000': '23100',   # Asistencia social primaria
+            '23102': '23100',   # Asistencia social primaria
+            '23103': '23100',   # Asistencia social primaria
+            '23130': '23100',   # Asistencia social primaria
+            '23133': '23100',   # Asistencia social primaria
+            '31300': '31100',   # Protección de la salubridad pública
+            '32100': '32300',   # Funcionamiento de centros docentes enseñanza preescolar, primaria y educación especial
+            '32101': '32000',   # Administración general de educación
+            '32400': '32600',   # Servicios complementarios de educación
+            '43100': '43130',   # Comercio ambulante
+            '43101': '43120',   # Mercados, abastos y lonjas
+            '92004': '92010',   # Otros servicios de administración general
+            '92300': '92310',   # Gestión del padrón municipal de habitantes
         }
 
         # Institutional code (all income go to the root node, and all expenses come from the root node too)
