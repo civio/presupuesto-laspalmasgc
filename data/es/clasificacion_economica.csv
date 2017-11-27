@@ -525,6 +525,7 @@ G,9,4,1,Devolución de fianzas
 #
 I,2,8,0,"Impuestos indirectos extinguidos"
 I,4,5,5,"Transferencias de comunidades autónomas"
+I,4,8,0,"De familias e instituciones sin fines de lucro"
 I,5,2,0,"Intereses de depósitos"
 I,6,1,0,"De las demás inversiones reales"
 I,7,8,0,"Transferencias de capital de familias e instituciones sin fines de lucro"

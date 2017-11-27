@@ -92,3 +92,21 @@
 9,3,2,00,"Gestión del sistema tributario"
 9,3,3,00,"Gestión del patrimonio"
 9,3,4,00,"Gestión de la deuda y de la tesorería"
+#
+# 2015
+#
+1,5,0,00,"Administración general de vivienda y urbanismo"
+1,5,1,17,"Desarrollo P.G.M.O."
+1,5,3,90,"15390"
+3,2,3,01,"Promocion educativa, universidades populares"
+3,3,0,00,"Administración general de cultura"
+4,4,0,00,"Administración general del transporte"
+9,2,4,04,"Casa de la cultura Tamaraceite"
+#
+# 2014
+#
+1,5,1,23,Diversas obras de infraestructura
+1,5,1,35,Urbanización el Polvorín
+1,5,6,00,Accesibilidad
+4,1,0,00,"Administración general de agricultura, ganadería y pesca"
+4,5,9,00,Otras infraestructuras
