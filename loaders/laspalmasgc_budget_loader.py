@@ -31,6 +31,7 @@ class LasPalmasGCBudgetLoader(SimpleBudgetLoader):
             '31300': '31100',   # Protección de la salubridad pública
             '32100': '32300',   # Funcionamiento de centros docentes enseñanza preescolar, primaria y educación especial
             '32101': '32000',   # Administración general de educación
+            '32300': '32900',   # Promoción educativa
             '32400': '32600',   # Servicios complementarios de educación
             '43100': '43130',   # Comercio ambulante
             '43101': '43120',   # Mercados, abastos y lonjas
