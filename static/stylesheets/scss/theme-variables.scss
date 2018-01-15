@@ -12,9 +12,9 @@ $gray-lightest:         lighten($gray-base, 96%) !default;
 
 $text-color:            #414141;
 
-$brand-primary:         #414A5A;
+$brand-primary:         #709e51; //78a45a; //#414A5A;
 $brand-secondary:       #C0D7DE;
-$brand-terciary:        #E5E5E5;
+$brand-terciary:        #ebebeb;
 
 $link-color:            $brand-primary;
 $link-hover-color:      $link-color;
@@ -84,7 +84,7 @@ $footer-bg: #333333;
 // --------------
 
 $page-header-bg:            #F6F6F6; //mix( $brand-secondary, white, 8% );
-$page-header-border-color:  $brand-secondary;
+$page-header-border-color:  $brand-primary;
 
 
 // Panels
@@ -191,4 +191,4 @@ $data-sources-color: $brand-primary;
 // --------------
 
 $sankey-income-color:   darken( #FC4B50, 6% );
-$sankey-expense-color:  saturate( darken( #79B3B1, 10% ), 10% );
+$sankey-expense-color:  saturate( darken( $brand-primary, 6% ), 10% );
